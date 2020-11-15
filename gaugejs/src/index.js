@@ -1,11 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Slider from './components/Slider'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
 
-const App = () => (
-  <div>
-    <Slider name="Progress" id="range"/>
-  </div>
-)
-
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
