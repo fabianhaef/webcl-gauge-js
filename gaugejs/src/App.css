@@ -10,6 +10,7 @@
   line-height: 1;
   text-anchor: middle;
   transform: translateY(-0.25em);
+  color: #fcfcfc;
 }
 
 .circle-text {
@@ -17,8 +18,13 @@
   text-transform: uppercase;
   text-anchor: middle;
   transform: translateY(0.7em);
+  color: #fcfcfc;
 }
 .container {
   text-align: center;
   align-content: center;
+}
+
+input {
+  color: #34308f;
 }

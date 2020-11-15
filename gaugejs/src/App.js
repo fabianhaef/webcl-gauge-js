@@ -16,7 +16,7 @@ class App extends Component {
       progressRange: "25 75",
       p: 25,
       thresholdRange: "25 75",
-      t: 50,
+      t: 25,
       size:"10rem",
       s:10
     }
@@ -34,7 +34,6 @@ class App extends Component {
   }
 
   handleThresholdRange = (e) => {
-
     let v = e.target.value;
     v = 100 - v;
     let t = 100 - v;
@@ -78,21 +77,24 @@ class App extends Component {
                 cy={circleConfig.x}
                 r={circleConfig.ratio}
                 fill="transparent"
-                stroke="teal"
-                strokeDasharray={this.state.progressRange}
+                stroke="#e6e6e6"
+                strokeDasharray={this.state.thresholdRange}
                 strokeDashoffset="25"
-              />
+                stroke-opacity="0.3"
 
+              />
               <circle
+                class="progress-circle"
                 className="path"
                 cx={circleConfig.x}
                 cy={circleConfig.x}
                 r={circleConfig.ratio}
                 fill="transparent"
-                stroke="red"
-                strokeDasharray={this.state.thresholdRange}
+                stroke="#34308F"
+                strokeDasharray={this.state.progressRange}
                 strokeDashoffset="25"
               />
+
                   
               <g className="circle-label">
                 <text x="50%" y="50%" className="circle-percentage">
@@ -109,7 +111,7 @@ class App extends Component {
           <p>Threshold</p>
           <input type="range" value={this.state.t} min="0" max="100" onChange={this.handleThresholdRange}></input>
           <p>Size</p>
-          <input type="range" value={this.state.s} min="10" max="30" onChange={this.handleSize}></input>
+          <input type="range" value={this.state.s} min="10" max="30" onChange={this.handleSize} ></input>
         </div>
       </React.Fragment>
     );
