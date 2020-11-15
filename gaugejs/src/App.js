@@ -107,11 +107,11 @@ class App extends Component {
             </svg>
           </figure>
           <p>Progress</p>
-          <input type="range" value={this.state.p} min="0" max="100" onChange={this.handleProgressRange}></input>
+          <input type="range" value={this.state.p} min="0" max="100" onChange={this.handleProgressRange} class="slider"></input>
           <p>Threshold</p>
-          <input type="range" value={this.state.t} min="0" max="100" onChange={this.handleThresholdRange}></input>
+          <input type="range" value={this.state.t} min="0" max="100" onChange={this.handleThresholdRange} class="slider"></input>
           <p>Size</p>
-          <input type="range" value={this.state.s} min="10" max="30" onChange={this.handleSize} ></input>
+          <input type="range" value={this.state.s} min="10" max="30" onChange={this.handleSize} class="slider"></input>
         </div>
       </React.Fragment>
     );
