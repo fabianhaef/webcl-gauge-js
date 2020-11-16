@@ -15,7 +15,7 @@ class Gauge extends Component {
         this.state = {
           progressRange: "25 75",
           progress: this.props.progress,
-          thresholdRange: "25 75",
+          thresholdRange: this.props.threshold + " 75",
           threshold: this.props.threshold,
           size:"10rem",
           s:10
@@ -82,7 +82,7 @@ class Gauge extends Component {
                 stroke="#e6e6e6"
                 strokeDasharray={this.state.thresholdRange}
                 strokeDashoffset="25"
-                stroke-opacity="0.3"
+                stroke-opacity="0.8"
 
               />
               <circle

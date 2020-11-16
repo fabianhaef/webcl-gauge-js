@@ -6,7 +6,7 @@ import Gauge from './Gauge';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Gauge progress={90} threshold={75} />
+    <Gauge progress={25} threshold={75} />
   </React.StrictMode>,
   document.getElementById('root')
 );
