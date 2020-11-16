@@ -13,7 +13,7 @@ class Gauge extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          progressRange: "25 75",
+          progressRange: this.props.progress + " 100",
           progress: this.props.progress,
           thresholdRange: this.props.threshold + " 75",
           threshold: this.props.threshold,
@@ -81,7 +81,7 @@ class Gauge extends Component {
                 fill="transparent"
                 stroke="#e6e6e6"
                 strokeDasharray={this.state.thresholdRange}
-                strokeDashoffset="25"
+                strokeDashoffset="50"
                 stroke-opacity="0.8"
 
               />
@@ -94,7 +94,7 @@ class Gauge extends Component {
                 fill="transparent"
                 stroke="#34308F"
                 strokeDasharray={this.state.progressRange}
-                strokeDashoffset="25"
+                //strokeDashoffset="25"
               />
 
                   
