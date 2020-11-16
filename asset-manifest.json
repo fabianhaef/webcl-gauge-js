@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/webcl-gauge-js/static/css/main.65485cb3.chunk.css",
+    "main.js": "/webcl-gauge-js/static/js/main.39e24e68.chunk.js",
+    "main.js.map": "/webcl-gauge-js/static/js/main.39e24e68.chunk.js.map",
+    "runtime-main.js": "/webcl-gauge-js/static/js/runtime-main.c19f3660.js",
+    "runtime-main.js.map": "/webcl-gauge-js/static/js/runtime-main.c19f3660.js.map",
+    "static/js/2.2e61dba1.chunk.js": "/webcl-gauge-js/static/js/2.2e61dba1.chunk.js",
+    "static/js/2.2e61dba1.chunk.js.map": "/webcl-gauge-js/static/js/2.2e61dba1.chunk.js.map",
+    "index.html": "/webcl-gauge-js/index.html",
+    "static/css/main.65485cb3.chunk.css.map": "/webcl-gauge-js/static/css/main.65485cb3.chunk.css.map",
+    "static/js/2.2e61dba1.chunk.js.LICENSE.txt": "/webcl-gauge-js/static/js/2.2e61dba1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c19f3660.js",
+    "static/js/2.2e61dba1.chunk.js",
+    "static/css/main.65485cb3.chunk.css",
+    "static/js/main.39e24e68.chunk.js"
+  ]
+}
