@@ -9,19 +9,19 @@ const circleConfig = {
   ratio: '15.91549430918954'
 };
 
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      progressRange: "25 75",
-      progress: 25,
-      thresholdRange: "25 75",
-      threshold: 25,
-      size:"10rem",
-      s:10
-    }
-  }
+class Gauge extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          progressRange: "25 75",
+          progress: this.props.progress,
+          thresholdRange: "25 75",
+          threshold: this.props.threshold,
+          size:"10rem",
+          s:10
+        }
+      }
+      
   
   handleProgressRange = (e) => {
     let v = e.target.value;
@@ -52,6 +52,7 @@ class App extends Component {
     let temp=s+"rem";
     this.setState({ size:temp  });
   }
+
   render() {
     const {size} = this.state;
     const style={
@@ -119,5 +120,4 @@ class App extends Component {
   }
 }
 
-export default App;
-
+export default Gauge
