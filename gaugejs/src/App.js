@@ -14,9 +14,9 @@ class App extends Component {
     super(props);
     this.state = {
       progressRange: "25 75",
-      p: 25,
+      progress: 25,
       thresholdRange: "25 75",
-      t: 25,
+      threshold: 25,
       size:"10rem",
       s:10
     }
@@ -29,7 +29,7 @@ class App extends Component {
     v = v.toString();
     p = p.toString();
     let temp = p + " " + v;
-    this.setState({ p: p });
+    this.setState({ progress: p });
     this.setState({ progressRange: temp });
   }
 
@@ -40,7 +40,7 @@ class App extends Component {
     v = v.toString();
     t = t.toString();
     let temp = t + " " + v;
-    this.setState({ t: t });
+    this.setState({ threshold: t });
     this.setState({ thresholdRange: temp });
   }
 
@@ -98,7 +98,7 @@ class App extends Component {
                   
               <g className="circle-label">
                 <text x="50%" y="50%" className="circle-percentage">
-                  {this.state.p}%
+                  {this.state.progress}%
           </text>
                 <text x="50%" y="50%" className="circle-text">
                   COMPLETE
@@ -107,9 +107,9 @@ class App extends Component {
             </svg>
           </figure>
           <p>Progress</p>
-          <input type="range" value={this.state.p} min="0" max="100" onChange={this.handleProgressRange} class="slider"></input>
+          <input type="range" value={this.state.progress} min="0" max="100" onChange={this.handleProgressRange} class="slider"></input>
           <p>Threshold</p>
-          <input type="range" value={this.state.t} min="0" max="100" onChange={this.handleThresholdRange} class="slider"></input>
+          <input type="range" value={this.state.threshold} min="0" max="100" onChange={this.handleThresholdRange} class="slider"></input>
           <p>Size</p>
           <input type="range" value={this.state.s} min="10" max="30" onChange={this.handleSize} class="slider"></input>
         </div>
